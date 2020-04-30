@@ -1,10 +1,12 @@
 $primary-color: #333;
 $secondary-color: gold;
 $show-home-image: true;
+
 $home-image: url(../img/background.jpg);
 $myWork-image: url(../img/about_me_background.jpg);
 $contact-image: url(../img/contact_background_img.jpg);
 $projects-image: url(../img/projects_background.jpg);
+
 $background-opacity: 0.7;
 
 @mixin easeOut {
