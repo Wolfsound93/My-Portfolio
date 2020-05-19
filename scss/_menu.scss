@@ -2,15 +2,15 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 20px;
-  top: 20px;
+  left: 30px;
+  top: 30px;
   cursor: pointer;
   @include easeOut;
 
   .btn-line {
-    width: 30px;
+    width: 45px;
     height: 5px;
-    margin: 0 0 3px 0;
+    margin: 0 0 7px 0;
     background: set-text-color($primary-color);
     @include easeOut;
   }
@@ -30,14 +30,13 @@
       }
       //LINE 3 - ROTATE
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(10px, -10px);
+        transform: rotate(-45deg) translate(15px, -15px);
       }
     }
   }
 }
 
 //MENU OVERLAY
-
 .menu {
   position: fixed;
   top: 0;
@@ -64,7 +63,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 12);
+    background: darken($primary-color, 13);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;

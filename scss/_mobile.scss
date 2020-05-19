@@ -1,31 +1,342 @@
-//Widescreens
-@include mediaXl {
-  .projects {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
+// Widescreens
+// @include mediaXl {
+//   //
+//   main {
+//     // ABOUT ME
+//     &#about {
+//       padding: 5rem;
+//       min-height: calc(100vh - 60px);
+//       h1 {
+//         margin-top: 3rem;
+//         font-size: 5rem;
+//       }
+//       h2 {
+//         font-size: 1.5rem;
+//         text-align: center;
+//       }
 
-//Desktop & Laptops
-@include mediaLg {
-  .projects {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+//       .about-info {
+//         //
+//         img {
+//           display: flex;
+//           //
+//         }
+//         //
+//         .bio {
+//           //
+//           display: flex;
+//           flex-direction: column;
+//           //
+//           h3 {
+//             margin-top: 1rem;
+//             margin-bottom: 1rem;
+//             font-size: 2.5rem;
+//             text-align: center;
+//           }
+//           //
+//           .history {
+//             width: 50%;
+//             border: 2px solid gold;
+//             height: 20rem;
+//             overflow-y: scroll;
+//             margin-left: 50%;
+//           }
+//           //
+//           p {
+//             font-family: monospace;
+//             margin: 0;
+//             padding: 0.5rem;
+//             font-size: 1.5rem;
+//             text-align: center;
+//           }
+//           //
+//           h3 {
+//             margin-top: 1rem;
+//             font-size: 3rem;
+//             text-align: center;
+//           }
+//           //
+//           .things {
+//             width: 100%;
 
-//Tablets & Small Laptops
+//             //
+//             ul {
+//               display: flex;
+//               flex-direction: column;
+//               text-align: initial;
+//               line-height: 2;
+//               outline: auto;
+//               font-family: sans-serif;
+//               width: 50%;
+//               font-size: 1.5rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     // MY PROJECTS
+//     &#work {
+//       //
+//       #projects {
+//         grid-template-columns: repeat(4, 1fr);
+//       }
+//     }
+
+//     // CONTACT ME
+//     #contact {
+//       .boxes {
+//         margin: 3rem 0rem 0rem 18rem;
+//         transform: rotate(-1.7deg);
+
+//         div {
+//           width: 43%;
+//           font-size: 1.2rem;
+//           padding: 0.5rem 0.5rem;
+//           margin-bottom: 2.5rem;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// Desktop & Laptops
+// @include mediaLg {
+//   //
+//   main {
+//     // ABOUT ME
+//     &#about {
+//       padding: 5rem;
+//       min-height: calc(100vh - 60px);
+//       h1 {
+//         margin-top: 3rem;
+//         font-size: 5rem;
+//       }
+//       h2 {
+//         font-size: 1.5rem;
+//         text-align: center;
+//       }
+
+//       .about-info {
+//         //
+//         img {
+//           display: flex;
+//           //
+//         }
+//         //
+//         .bio {
+//           //
+//           display: flex;
+//           flex-direction: column;
+//           //
+//           h3 {
+//             margin-top: 1rem;
+//             margin-bottom: 1rem;
+//             font-size: 2.5rem;
+//             text-align: center;
+//           }
+//           //
+//           .history {
+//             width: 50%;
+//             border: 2px solid gold;
+//             height: 20rem;
+//             overflow-y: scroll;
+//             margin-left: 50%;
+//           }
+//           //
+//           p {
+//             font-family: monospace;
+//             margin: 0;
+//             padding: 0.5rem;
+//             font-size: 1.5rem;
+//             text-align: center;
+//           }
+//           //
+//           h3 {
+//             margin-top: 1rem;
+//             font-size: 3rem;
+//             text-align: center;
+//           }
+//           //
+//           .things {
+//             width: 100%;
+
+//             //
+//             ul {
+//               display: flex;
+//               flex-direction: column;
+//               text-align: initial;
+//               line-height: 2;
+//               outline: auto;
+//               font-family: sans-serif;
+//               width: 50%;
+//               font-size: 1.5rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+
+//     // Projects
+//     &#work {
+//       //
+//       .projects {
+//         grid-template-columns: repeat(3, 1fr);
+//       }
+//     }
+
+//     &#contact {
+//       padding: 5rem;
+//       .boxes {
+//         margin: 2rem 0rem 0rem 17rem;
+
+//         div {
+//           width: 100%;
+//           font-size: 1.2rem;
+//           padding: 0.5rem 0.5rem;
+//           margin-bottom: 2.5rem;
+//         }
+//       }
+//     }
+//   }
+
+//   .main-footer {
+//     span {
+//       width: 20%;
+//     }
+//   }
+// }
+
+//---------------------------------------------- Tablets & Small Laptops SIZE
 @include mediaMd {
   main {
-    align-items: center;
-    text-align: center;
+    // HOME PAGE
+    &#home {
+      align-items: center;
+      text-align: center;
+      //
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
 
-    .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem;
+      .icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+      }
+    }
+
+    // ABOUT ME
+    &#about {
+      padding: 0 5rem;
+
+      .about-info {
+        //
+        img {
+          display: flex;
+        }
+        //
+        .bio {
+          //
+          .text-secondary {
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-align: center;
+          }
+          //
+          .history {
+            width: 70%;
+            height: 15rem;
+            margin-left: 30%;
+            p {
+              text-align: center;
+            }
+          }
+          //
+          h3 {
+            font-size: 2rem;
+          }
+
+          //
+          .things {
+            ul {
+              width: 70%;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+
+    // SKILLS
+    &#skills {
+      padding: 5rem;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      .skills-icons {
+        grid-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    // MY PROJECTS
+    &#work {
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      // MODAL WINDOW
+      .modal {
+        //
+        &-content {
+          margin: 15% auto;
+          width: 90%;
+          height: 80vh;
+        }
+        &-header {
+          h2 {
+            font-size: 2rem;
+          }
+        }
+
+        &-body {
+          //
+          padding: 10px 14px;
+
+          .sm-header {
+            font-size: 1.2rem;
+          }
+
+          img {
+            width: 60%;
+            height: 30.5vh;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+
+    // CONTACT ME
+    &#contact {
+      padding: 0 6rem 0 6rem;
+      .boxes {
+        margin: 10rem 0 0rem -2rem;
+        div {
+          width: 76%;
+          font-size: 1.2rem;
+          margin-top: 1rem;
+        }
+      }
     }
   }
 
+  // SLIDE MENU
   ul.menu-nav,
-  div.menu-branding {
+  .menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
@@ -52,58 +363,194 @@
     }
   }
 
-  .about-info {
-    grid-template-areas:
-      'bioimage'
-      'bio'
-      'job1'
-      'job2'
-      'job3';
-
-    grid-template-columns: 1fr;
-  }
-
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
+  #main-footer {
+    span {
+      width: 20%;
+    }
   }
 }
 
-//Phones
+//--------------------------------------------SMARTPHONE SIZE
+
 @include mediaSm {
-  main#home h1 {
-    margin-top: 10vh;
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-}
-
-// EXTRA SMALL SCREENS
-@media (max-height: 649px) and (max-width: 320px) {
   main {
-    padding: 1rem;
-    min-height: calc(100vh - 60px);
+    // HOME PAGE
+    &#home {
+      padding: 0;
 
-    .icons {
-      margin-top: 1rem;
+      h1 {
+        margin-top: 30vh;
+        margin-bottom: 2rem;
+        font-size: 4.5rem;
+      }
 
-      a {
-        padding: 0.4rem;
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+      }
 
-        &:hover {
-          color: $secondary-color;
-          @include easeOut();
+      .icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+    }
+
+    // ABOUT ME
+    &#about {
+      padding: 1rem;
+      h1 {
+        margin: 0;
+        font-size: 5rem;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .about-info {
+        //
+        img {
+          display: flex;
+        }
+        //
+        .bio {
+          //
+          .text-secondary {
+            margin-top: 1rem;
+            font-size: 3rem;
+            font-family: monospace;
+          }
+          //
+          .history {
+            width: 100%;
+            margin: 0;
+            p {
+              text-align: center;
+            }
+          }
+          //
+          h3 {
+            font-size: 25px;
+            font-family: monospace;
+          }
+          //
+          .things {
+            ul {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    // SKILLS
+    &#skills {
+      padding: 5rem;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+
+      .skills-icons {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    // MY PROJECTS
+    &#work {
+      padding: 5rem;
+      //
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      // MODAL WINDOW
+      .modal {
+        //
+        &-content {
+          margin: 15% auto;
+          width: 90%;
+          height: 80vh;
+        }
+        &-header {
+          h2 {
+            font-size: 2rem;
+          }
+        }
+
+        &-body {
+          //
+          padding: 10px 14px;
+
+          .sm-header {
+            font-size: 1.2rem;
+          }
+
+          img {
+            width: 60%;
+            height: 17.5vh;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+
+    &#contact {
+      padding: 4rem;
+      h1 {
+        margin-top: 1vh;
+        font-size: 4.5rem;
+        text-align: center;
+      }
+      h2 {
+        font-size: 1.5rem;
+        text-align: center;
+      }
+
+      .boxes {
+        margin: 130px 0px 0 -50px;
+
+        div {
+          font-size: 1rem;
+          width: 63%;
+          margin: 3rem 0;
         }
       }
     }
   }
-  #about {
-    h1 {
-      font-size: 2rem;
+
+  //
+  #main-footer {
+    font-size: 1.5rem;
+    padding: 0;
+
+    span {
+      width: 0;
+      height: 0;
+      visibility: hidden;
     }
-    h2 {
-      font-size: 1rem;
+
+    .icons {
+      font-size: 1;
+      padding-top: 0px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
     }
   }
 }
