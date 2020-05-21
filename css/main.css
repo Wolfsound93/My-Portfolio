@@ -325,19 +325,30 @@ main {
           font-family: sans-serif;
           width: 50%;
           font-size: 1.5rem; }
-  main#contact .boxes {
-    margin: 12.5rem 0rem 0rem 25rem;
-    transform: rotate(-1.7deg);
-    width: 25.5rem; }
-    main#contact .boxes div {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-      margin-top: 6rem;
-      cursor: pointer;
-      border-bottom: 3px transparent solid;
-      transition: border-color 0.5s; }
-      main#contact .boxes div:hover {
-        border-color: gold; }
+  main#contact {
+    display: flex;
+    flex-direction: column; }
+    main#contact .sm-heading {
+      width: 100%; }
+    main#contact .boxes {
+      background: rgba(255, 255, 255, 0.253);
+      width: 35%;
+      padding: 2rem;
+      align-self: center;
+      margin-top: 6rem; }
+      main#contact .boxes div {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        cursor: pointer;
+        transition: all 0.8s ease-out; }
+        main#contact .boxes div:hover {
+          padding: 0.5rem 1.5rem;
+          background: gold;
+          color: #000; }
+          main#contact .boxes div:hover span {
+            color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -375,6 +386,103 @@ main {
         transition: all 0.8s ease-out;
         font-size: 2rem; }
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  main#home .icons {
+    width: 35%; }
+  main#skills {
+    padding: 3rem; }
+    main#skills .sm-heading {
+      width: 100%; }
+    main#skills .skills-icons {
+      margin-top: 2rem;
+      grid-gap: 1.5rem; }
+      main#skills .skills-icons .skills-box {
+        font-size: 1.3rem; }
+  main#about {
+    padding: 5rem;
+    min-height: calc(100vh - 60px); }
+    main#about h1 {
+      margin-top: 3rem;
+      font-size: 5rem; }
+    main#about h2 {
+      font-size: 1.5rem; }
+    main#about .about-info img {
+      display: flex; }
+    main#about .about-info .bio {
+      display: flex;
+      flex-direction: column; }
+      main#about .about-info .bio h3 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        text-align: center; }
+      main#about .about-info .bio .history {
+        width: 50%;
+        border: 2px solid gold;
+        height: 20rem;
+        overflow-y: scroll;
+        margin-left: 50%; }
+      main#about .about-info .bio p {
+        font-family: monospace;
+        margin: 0;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-align: center; }
+      main#about .about-info .bio h3 {
+        margin-top: 1rem;
+        font-size: 2.1rem;
+        text-align: center; }
+      main#about .about-info .bio .things ul {
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        line-height: 2;
+        outline: auto;
+        font-family: sans-serif;
+        width: 50%;
+        font-size: 1.2rem; }
+  main#work .projects {
+    grid-gap: 0.5rem; }
+  main#work #firstModal .modal-content {
+    height: 85vh;
+    width: 70%; }
+    main#work #firstModal .modal-content .modal-body img {
+      width: 20rem;
+      height: 13rem;
+      margin-bottom: 4%; }
+  main#work #secondModal .modal-content {
+    height: 95vh;
+    width: 70%; }
+    main#work #secondModal .modal-content .modal-body img {
+      width: 30rem;
+      height: 15rem; }
+  main#work #thirdModal .modal-content {
+    height: 95vh;
+    width: 70%; }
+    main#work #thirdModal .modal-content .modal-body img {
+      width: 30rem;
+      height: 15rem; }
+  main#work #fourthModal .modal-content {
+    height: 86.5vh;
+    width: 80%; }
+  main#work #fourthModal .modal-body img {
+    width: 30rem;
+    height: 15rem; }
+  main#contact {
+    padding: 5rem; }
+    main#contact .boxes {
+      width: 65%;
+      padding: 1rem;
+      margin: 0; }
+      main#contact .boxes div {
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem; }
+  #main-footer span {
+    width: 18%; } }
+
 @media screen and (max-width: 768px) {
   main#home {
     align-items: center;
@@ -407,11 +515,13 @@ main {
       font-size: 1.2rem; }
   main#skills {
     padding: 5rem; }
-    main#skills h2 {
-      font-size: 1.2rem; }
+    main#skills .sm-heading {
+      width: 100%; }
     main#skills .skills-icons {
       grid-gap: 1rem;
       grid-template-columns: repeat(2, 1fr); }
+  main#work .sm-heading {
+    width: 100%; }
   main#work .projects {
     grid-template-columns: repeat(2, 1fr); }
   main#work .modal-content {
@@ -428,13 +538,21 @@ main {
       width: 60%;
       height: 30.5vh;
       margin-bottom: 18px; }
+  main#work #secondModal .modal-content {
+    height: 82vh; }
+  main#work #thirdModal .modal-content {
+    height: 85vh; }
   main#contact {
     padding: 0 6rem 0 6rem; }
+    main#contact .lg-heading {
+      text-align: center; }
+    main#contact .sm-heading {
+      width: 100%; }
     main#contact .boxes {
-      margin: 10rem 0 0rem -2rem; }
+      width: 80%;
+      margin-top: 6rem; }
       main#contact .boxes div {
-        width: 76%;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-top: 1rem; }
   ul.menu-nav,
   .menu-branding {
@@ -471,7 +589,8 @@ main {
     main#home .icons {
       display: flex;
       justify-content: space-evenly;
-      width: 100%; }
+      width: 100%;
+      margin-top: 20rem; }
   main#about {
     padding: 1rem; }
     main#about h1 {
@@ -479,7 +598,7 @@ main {
       font-size: 5rem;
       text-align: center; }
     main#about h2 {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       text-align: center; }
     main#about .about-info img {
       display: flex; }
@@ -501,8 +620,8 @@ main {
     padding: 5rem; }
     main#skills h1 {
       font-size: 5rem; }
-    main#skills h2 {
-      font-size: 1rem; }
+    main#skills .sm-heading {
+      width: 100%; }
     main#skills .skills-icons {
       grid-gap: 2rem;
       grid-template-columns: repeat(1, 1fr); }
@@ -523,28 +642,32 @@ main {
     main#work .modal-header h2 {
       font-size: 2rem; }
     main#work .modal-body {
-      padding: 10px 14px; }
+      padding: 1; }
       main#work .modal-body .sm-header {
         font-size: 1.2rem; }
       main#work .modal-body img {
         width: 60%;
         height: 17.5vh;
         margin-bottom: 18px; }
+    main#work #secondModal .modal-content {
+      height: 82vh; }
+    main#work #thirdModal .modal-content {
+      height: 82vh; }
   main#contact {
     padding: 4rem; }
     main#contact h1 {
-      margin-top: 1vh;
       font-size: 4.5rem;
       text-align: center; }
     main#contact h2 {
       font-size: 1.5rem;
       text-align: center; }
     main#contact .boxes {
-      margin: 130px 0px 0 -50px; }
+      margin-top: 2rem;
+      padding: 0.5rem;
+      width: 100%; }
       main#contact .boxes div {
         font-size: 1rem;
-        width: 63%;
-        margin: 3rem 0; }
+        margin: 2.5rem 0; }
   #main-footer {
     font-size: 1.5rem;
     padding: 0; }
