@@ -295,21 +295,34 @@ main {
 
   // CONTACT ME
   &#contact {
+    display: flex;
+    flex-direction: column;
+    .sm-heading {
+      width: 100%;
+    }
     .boxes {
-      margin: 12.5rem 0rem 0rem 25rem;
-      transform: rotate(-1.7deg);
-      width: 25.5rem;
+      background: rgba(255, 255, 255, 0.253);
+      width: 35%;
+      padding: 2rem;
+      align-self: center;
+      margin-top: 6rem;
 
       div {
-        font-size: 1.5rem;
+        text-align: center;
+        font-size: 2rem;
         margin-bottom: 2rem;
-        margin-top: 6rem;
+        margin-top: 4rem;
         cursor: pointer;
-        border-bottom: 3px transparent solid;
-        transition: border-color 0.5s;
+        @include easeOut;
 
         &:hover {
-          border-color: $secondary-color;
+          padding: 0.5rem 1.5rem;
+          background: $secondary-color;
+          color: set-text-color($secondary-color);
+
+          span {
+            color: set-text-color($secondary-color);
+          }
         }
       }
     }
