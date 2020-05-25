@@ -206,26 +206,11 @@
       }
 
       // MODAL WINDOW
-      // .modal {
-      //   //
-      //   &-content {
-      //     // margin: 10% auto;
-      //   }
-
-      //   &-body {
-      //     padding: 5px 5px;
-
-      //     img {
-      //       width: 46%;
-      //       height: 100%;
-      //     }
-      //   }
-      // }
-
       #firstModal {
         .modal-content {
-          height: 85vh;
-          width: 70%;
+          margin: 30px auto;
+          height: 75vh;
+          width: 76%;
           //
           .modal-body {
             img {
@@ -238,13 +223,16 @@
       }
       #secondModal {
         .modal-content {
-          height: 95vh;
-          width: 70%;
+          margin: 10px auto;
+
+          height: 85vh;
+          width: 75%;
           //
           .modal-body {
             img {
               width: 30rem;
               height: 15rem;
+              margin-bottom: 5%;
             }
           }
         }
@@ -252,7 +240,7 @@
 
       #thirdModal {
         .modal-content {
-          height: 95vh;
+          height: 85vh;
           width: 70%;
 
           .modal-body {
@@ -266,8 +254,8 @@
 
       #fourthModal {
         .modal-content {
-          height: 86.5vh;
-          width: 80%;
+          height: 75vh;
+          width: 75%;
         }
 
         .modal-body {
@@ -389,44 +377,63 @@
       }
 
       // MODAL WINDOW
-      .modal {
-        //
-        &-content {
-          margin: 15% auto;
-          width: 90%;
-          height: 80vh;
-        }
-        &-header {
-          h2 {
-            font-size: 2rem;
-          }
-        }
-
-        &-body {
+      #firstModal {
+        .modal-content {
+          margin: 30px auto;
+          height: 75vh;
+          width: 76%;
           //
-          padding: 10px 14px;
-
-          .sm-header {
-            font-size: 1.2rem;
-          }
-
-          img {
-            width: 60%;
-            height: 30.5vh;
-            margin-bottom: 18px;
+          .modal-body {
+            img {
+              width: 20rem;
+              height: 13rem;
+              margin-bottom: 4%;
+            }
           }
         }
       }
-
       #secondModal {
         .modal-content {
-          height: 82vh;
+          margin: 10px auto;
+
+          height: 85vh;
+          width: 75%;
+          //
+          .modal-body {
+            img {
+              width: 30rem;
+              height: 15rem;
+              margin-bottom: 5%;
+            }
+          }
         }
       }
 
       #thirdModal {
         .modal-content {
           height: 85vh;
+          width: 70%;
+
+          .modal-body {
+            img {
+              width: 30rem;
+              height: 15rem;
+            }
+          }
+        }
+      }
+
+      #fourthModal {
+        .modal-content {
+          height: 75vh;
+          width: 75%;
+        }
+
+        .modal-body {
+          img {
+            width: 30rem;
+            height: 15rem;
+          }
         }
       }
     }
@@ -512,7 +519,6 @@
         display: flex;
         justify-content: space-evenly;
         width: 100%;
-        margin-top: 20rem;
       }
     }
 
@@ -601,42 +607,63 @@
 
       // MODAL WINDOW
       .modal {
-        //
-        &-content {
-          margin: 15% auto;
-          width: 90%;
-          height: 80vh;
-        }
         &-header {
           h2 {
-            font-size: 2rem;
+            font-size: 3rem;
           }
         }
 
         &-body {
-          //
-          padding: 1;
-
           .sm-header {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
           }
-
-          img {
-            width: 60%;
-            height: 17.5vh;
-            margin-bottom: 18px;
-          }
+        }
+      }
+      //
+      #firstModal {
+        .modal-content {
+          height: 82vh;
+          margin: 4rem;
         }
       }
       //
       #secondModal {
         .modal-content {
-          height: 82vh;
+          height: 85vh;
+          margin: 4rem;
+
+          .modal-body {
+            .image {
+              width: 90%;
+              height: 40%;
+            }
+          }
         }
       }
       #thirdModal {
         .modal-content {
-          height: 82vh;
+          height: 87.5vh;
+          margin: 4rem;
+
+          .modal-body {
+            .image {
+              width: 100%;
+              height: 40%;
+            }
+          }
+        }
+      }
+      #fourthModal {
+        .modal-content {
+          height: 92vh;
+          margin: 4rem;
+
+          .modal-body {
+            .image {
+              width: 100%;
+              height: 40%;
+            }
+          }
         }
       }
     }

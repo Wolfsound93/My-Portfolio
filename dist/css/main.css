@@ -241,9 +241,9 @@ main {
     main#work .modal-content {
       background-color: #f4f4f4;
       color: black;
-      margin: 5% auto;
-      width: 55%;
-      height: 80%;
+      margin: 30px auto;
+      height: 85vh;
+      width: 80%;
       box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
       animation-name: modalopen;
       animation-duration: 1s; }
@@ -257,14 +257,13 @@ main {
       flex-direction: column;
       padding: 10px 20px; }
       main#work .modal-body .sm-header {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         margin: 0;
         text-align: center; }
+      main#work .modal-body p {
+        font-size: 0.8rem; }
       main#work .modal-body img {
-        width: 40rem;
-        height: 25rem;
-        align-self: center;
-        margin-bottom: 4%; }
+        align-self: center; }
     main#work .modal-footer {
       background: gold;
       padding: 10px;
@@ -284,6 +283,38 @@ main {
     opacity: 0; }
   to {
     opacity: 1; } }
+  main#work #firstModal .modal-content {
+    margin: 30px auto;
+    height: 68vh;
+    width: 70%; }
+    main#work #firstModal .modal-content .modal-body img {
+      width: 39.5%;
+      height: 100%;
+      margin-bottom: 4%; }
+  main#work #secondModal .modal-content {
+    margin: 30px auto;
+    height: 73.5vh;
+    width: 73%; }
+    main#work #secondModal .modal-content .modal-body img {
+      width: 39.5%;
+      height: 100%;
+      margin-bottom: 5%; }
+  main#work #thirdModal .modal-content {
+    margin: 30px auto;
+    height: 73.5vh;
+    width: 73%; }
+    main#work #thirdModal .modal-content .modal-body img {
+      width: 39.5%;
+      height: 100%;
+      margin-bottom: 5%; }
+  main#work #fourthModal .modal-content {
+    margin: 30px auto;
+    height: 73.5vh;
+    width: 77%; }
+    main#work #fourthModal .modal-content .modal-body img {
+      width: 39.5%;
+      height: 100%;
+      margin-bottom: 5%; }
   main#about {
     padding: 5rem; }
     main#about h1 {
@@ -332,7 +363,6 @@ main {
       width: 100%; }
     main#contact .boxes {
       background: rgba(255, 255, 255, 0.253);
-      width: 35%;
       padding: 2rem;
       align-self: center;
       margin-top: 6rem; }
@@ -444,27 +474,30 @@ main {
   main#work .projects {
     grid-gap: 0.5rem; }
   main#work #firstModal .modal-content {
-    height: 85vh;
-    width: 70%; }
+    margin: 30px auto;
+    height: 75vh;
+    width: 76%; }
     main#work #firstModal .modal-content .modal-body img {
       width: 20rem;
       height: 13rem;
       margin-bottom: 4%; }
   main#work #secondModal .modal-content {
-    height: 95vh;
-    width: 70%; }
+    margin: 10px auto;
+    height: 85vh;
+    width: 75%; }
     main#work #secondModal .modal-content .modal-body img {
       width: 30rem;
-      height: 15rem; }
+      height: 15rem;
+      margin-bottom: 5%; }
   main#work #thirdModal .modal-content {
-    height: 95vh;
+    height: 85vh;
     width: 70%; }
     main#work #thirdModal .modal-content .modal-body img {
       width: 30rem;
       height: 15rem; }
   main#work #fourthModal .modal-content {
-    height: 86.5vh;
-    width: 80%; }
+    height: 75vh;
+    width: 75%; }
   main#work #fourthModal .modal-body img {
     width: 30rem;
     height: 15rem; }
@@ -524,24 +557,34 @@ main {
     width: 100%; }
   main#work .projects {
     grid-template-columns: repeat(2, 1fr); }
-  main#work .modal-content {
-    margin: 15% auto;
-    width: 90%;
-    height: 80vh; }
-  main#work .modal-header h2 {
-    font-size: 2rem; }
-  main#work .modal-body {
-    padding: 10px 14px; }
-    main#work .modal-body .sm-header {
-      font-size: 1.2rem; }
-    main#work .modal-body img {
-      width: 60%;
-      height: 30.5vh;
-      margin-bottom: 18px; }
+  main#work #firstModal .modal-content {
+    margin: 30px auto;
+    height: 75vh;
+    width: 76%; }
+    main#work #firstModal .modal-content .modal-body img {
+      width: 20rem;
+      height: 13rem;
+      margin-bottom: 4%; }
   main#work #secondModal .modal-content {
-    height: 82vh; }
+    margin: 10px auto;
+    height: 85vh;
+    width: 75%; }
+    main#work #secondModal .modal-content .modal-body img {
+      width: 30rem;
+      height: 15rem;
+      margin-bottom: 5%; }
   main#work #thirdModal .modal-content {
-    height: 85vh; }
+    height: 85vh;
+    width: 70%; }
+    main#work #thirdModal .modal-content .modal-body img {
+      width: 30rem;
+      height: 15rem; }
+  main#work #fourthModal .modal-content {
+    height: 75vh;
+    width: 75%; }
+  main#work #fourthModal .modal-body img {
+    width: 30rem;
+    height: 15rem; }
   main#contact {
     padding: 0 6rem 0 6rem; }
     main#contact .lg-heading {
@@ -589,8 +632,7 @@ main {
     main#home .icons {
       display: flex;
       justify-content: space-evenly;
-      width: 100%;
-      margin-top: 20rem; }
+      width: 100%; }
   main#about {
     padding: 1rem; }
     main#about h1 {
@@ -635,24 +677,31 @@ main {
       text-align: center; }
     main#work .projects {
       grid-template-columns: 1fr; }
-    main#work .modal-content {
-      margin: 15% auto;
-      width: 90%;
-      height: 80vh; }
     main#work .modal-header h2 {
-      font-size: 2rem; }
-    main#work .modal-body {
-      padding: 1; }
-      main#work .modal-body .sm-header {
-        font-size: 1.2rem; }
-      main#work .modal-body img {
-        width: 60%;
-        height: 17.5vh;
-        margin-bottom: 18px; }
+      font-size: 3rem; }
+    main#work .modal-body .sm-header {
+      font-size: 1.5rem; }
+    main#work #firstModal .modal-content {
+      height: 82vh;
+      margin: 4rem; }
     main#work #secondModal .modal-content {
-      height: 82vh; }
+      height: 85vh;
+      margin: 4rem; }
+      main#work #secondModal .modal-content .modal-body .image {
+        width: 90%;
+        height: 40%; }
     main#work #thirdModal .modal-content {
-      height: 82vh; }
+      height: 87.5vh;
+      margin: 4rem; }
+      main#work #thirdModal .modal-content .modal-body .image {
+        width: 100%;
+        height: 40%; }
+    main#work #fourthModal .modal-content {
+      height: 92vh;
+      margin: 4rem; }
+      main#work #fourthModal .modal-content .modal-body .image {
+        width: 100%;
+        height: 40%; }
   main#contact {
     padding: 4rem; }
     main#contact h1 {

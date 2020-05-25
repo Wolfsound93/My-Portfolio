@@ -162,9 +162,9 @@ main {
       &-content {
         background-color: #f4f4f4;
         color: black;
-        margin: 5% auto;
-        width: 55%;
-        height: 80%;
+        margin: 30px auto;
+        height: 85vh;
+        width: 80%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),
           0 7px 20px 0 rgba(0, 0, 0, 0.2);
         animation-name: modalopen;
@@ -183,16 +183,17 @@ main {
         padding: 10px 20px;
 
         .sm-header {
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           margin: 0;
           text-align: center;
         }
 
+        p {
+          font-size: 0.8rem;
+        }
+
         img {
-          width: 40rem;
-          height: 25rem;
           align-self: center;
-          margin-bottom: 4%;
         }
       }
 
@@ -221,6 +222,67 @@ main {
         }
         to {
           opacity: 1;
+        }
+      }
+    }
+
+    #firstModal {
+      .modal-content {
+        margin: 30px auto;
+        height: 68vh;
+        width: 70%;
+        //
+        .modal-body {
+          img {
+            width: 39.5%;
+            height: 100%;
+            margin-bottom: 4%;
+          }
+        }
+      }
+    }
+    #secondModal {
+      .modal-content {
+        margin: 30px auto;
+        height: 73.5vh;
+        width: 73%;
+        //
+        .modal-body {
+          img {
+            width: 39.5%;
+            height: 100%;
+            margin-bottom: 5%;
+          }
+        }
+      }
+    }
+    #thirdModal {
+      .modal-content {
+        margin: 30px auto;
+        height: 73.5vh;
+        width: 73%;
+        //
+        .modal-body {
+          img {
+            width: 39.5%;
+            height: 100%;
+            margin-bottom: 5%;
+          }
+        }
+      }
+    }
+    #fourthModal {
+      .modal-content {
+        margin: 30px auto;
+        height: 73.5vh;
+        width: 77%;
+        //
+        .modal-body {
+          img {
+            width: 39.5%;
+            height: 100%;
+            margin-bottom: 5%;
+          }
         }
       }
     }
@@ -302,7 +364,6 @@ main {
     }
     .boxes {
       background: rgba(255, 255, 255, 0.253);
-      width: 35%;
       padding: 2rem;
       align-self: center;
       margin-top: 6rem;
